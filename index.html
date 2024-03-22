@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <title>Movie app</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/mylogo-removebg-preview.png">
+        </div>
+        <form class="search">
+            <div class="search-container">
+                <input type="search" class="search-movie" placeholder="Search for a movie">
+                <button class="btn-search" type="submit">Search</button>
+            </div>
+        </form>
+        <div class="mode" data-mode="mode">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+    </header>
+    <main>
+        <section class="find-your-file">
+            <h1>Find your film</h1>
+            <h5><a href="watchlist.html" id="a">My Watchlist</a></h5>
+        </section>
+        <section class="movie-container">
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #000;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header div,
+form {
+    padding: 10px;
+}
+
+form input,
+button {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #374151;
+}
+
+header,
+.find-your-file,
+.movie,
+.duration-and-type,
+.watch-list,
+.mode{
+    display: flex; 
+    align-items: center; 
+}
+.no-movies{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top:150px;
+}
+
+.no-movies label,i{
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.no-movies label,i{
+    color: #000;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input[type="search"] {
+    padding-left: 30px; 
+    background-image: url('images/Search.png');
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 20px;
+}
+
+input[type="search"]::placeholder{
+    color: rgb(170, 170, 170);
+    font-size: 14px;
+}
+
+.find-your-file {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("images/background-img3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    color: #fff;
+    justify-content: space-around;
+}
+
+.title-and-rating i{
+    color: gold;  
+}
+
+.movie-container,
+.my-watchlist{
+    background-color: #fff;
+    width: 100%;
+    min-height:60.93vh;
+}
+
+h1,
+.mode i{
+    font-size: 30px;
+}
+
+.watchlist-font{
+    font-family: "Ceviche One", system-ui;
+    font-size:20px;
+}
+.watchlist-header{
+    padding: 7px 0;
+}
+
+strong{
+    font-size: 19px;
+}
+small{
+    font-size: 16px;
+}
+.movie{
+    padding: 40px 10px 20px 30px;
+}
+.movie-info-container{
+    margin-left: 20px;
+}
+.title-and-rating small,
+.title-and-rating img,
+.title-and-rating strong {
+   padding-right:5px;
+}
+.movie-info-container div{
+    margin-bottom: 6px;
+}
+.type small{
+    padding:0 15px;
+}
+.movie-img{
+    width: 100px;
+}
+
+
+
+ p{
+    color: #6B7280;
+    font-size: 16px;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    /* color: #000; */
+}
+a{
+    cursor: pointer;
+}
+
+b{
+    color: #DFDDDD;
+}
+
+.hidden{
+    display: none;
+}
+
+.mode i,
+.watch-list img,
+.watch-list label {
+    padding: 0 3px;
+}
+
+.mode i,section h5 a,
+.watchlist-font h2{
+    color: #fff;
+}
+
+.color{
+    background-color:#000;
+    color: white;
+}
+
+
+.swal2-popup {
+    width: 400px !important;
+  }
+
+@media (max-width:480px){
+    .logo img {
+        width: 85px;
+    }
+    form input{
+        width: 140px;
+    }
+    form input,
+    button {
+        padding: 5px 2px;
+    }
+    .search-container input[type="search"] {
+        padding-left: 20px; 
+        background-size: 14px;
+    }
+    input[type="search"]::placeholder{
+        font-size: 12px;
+    }
+
+    .mode i{
+        font-size: 23px;
+    }
+    .movie-container{
+        width: 100%;
+    }
+    strong{
+        font-size: 14px;
+    }
+    small{
+        font-size: 10px;
+    }
+    
+    .type small{
+        padding:0 4px;
+    }
+
+ 
+    p,label,
+    .title-and-rating i{
+        font-size: 11px;
+    }
+    .swal2-popup {
+        width: 200px !important;
+        font-size: 11px !important;
+    }
+  
+    
+}
+
+@media (min-width:768px){
+    header div{
+        padding: 10px 30px;
+    }
+    form input,
+    button {
+        padding: 8px 40px;
+    }
+    .movie-img{
+        width: 80%;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    strong{
+        font-size: 40px;
+    }
+    small,p{
+        font-size: 30px;
+    }
+    p{
+        line-height: 1.5;
+        max-width:800px;
+    }
+    .watch-list i, 
+    .watch-list label{
+        font-size: 30px;
+    }
+    h5{
+        font-size: 20px;
+    }
+}
+
