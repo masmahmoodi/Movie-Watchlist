@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
                     <div class="movie-info-container">
                         <div class="title-and-rating">
                             <strong>${movie.Title}</strong>
-                            <div><i class="fa-solid fa-star"></i></div>
+                            <i class="fa-solid fa-star"></i>
                             <small>${movie.imdbRating}</small>
                         </div>
                         <div class="duration-and-type">
@@ -93,8 +93,3 @@ function movieRemoved() {
     })
    
 }
-
-
-// document.querySelector(".mode").addEventListener("click",(e)=>{
-   
-// })
